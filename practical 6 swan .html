@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scholarship / Seminar Registration</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+
+    <!-- Personal Details -->
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        Name: <input type="text" name="name"><br><br>
+        Email: <input type="email" name="email"><br><br>
+        Phone: <input type="tel" name="phone"><br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+    </fieldset>
+
+    <br>
+
+    <!-- Academic Details -->
+    <fieldset>
+        <legend>Academic Details</legend>
+
+        Course:
+        <select name="course">
+            <option value="">--Select--</option>
+            <option value="bsc">B.Sc</option>
+            <option value="bcom">B.Com</option>
+            <option value="btech">B.Tech</option>
+            <option value="mba">MBA</option>
+        </select>
+        <br><br>
+
+        Year:
+        <select name="year">
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>Final Year</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Seminar / Scholarship Options -->
+    <fieldset>
+        <legend>Options</legend>
+
+        Apply for:
+        <input type="checkbox" name="apply" value="scholarship"> Scholarship
+        <input type="checkbox" name="apply" value="seminar"> Seminar
+        <br><br>
+
+        Preferred Seminar Mode:
+        <input type="radio" name="mode" value="online"> Online
+        <input type="radio" name="mode" value="offline"> Offline
+    </fieldset>
+
+    <br>
+
+    <!-- Submit -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
