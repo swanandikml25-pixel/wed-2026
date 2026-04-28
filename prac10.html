@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iframe Demo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .menu {
+            width: 25%;
+            background: #f2f2f2;
+            padding: 15px;
+        }
+        .content {
+            width: 75%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Menu -->
+    <div class="menu">
+        <h3>Menu</h3>
+        <a href="https://www.wikipedia.org" target="frame">Open Wikipedia</a>
+        <a href="https://www.openai.com" target="frame">Open OpenAI</a>
+
+        <!-- Map button -->
+        <a href="https://www.google.com/maps?q=Nagpur&output=embed" target="frame">
+            View Nagpur Map
+        </a>
+
+        <!-- Internal content -->
+        <a hrefdoc="<h2>Hello!</h2><p>This is internal content loaded in iframe.</p>" target="frame">
+            Show Internal Page
+        </a>
+    </div>
+
+    <!-- Right Frame -->
+    <div class="content">
+        <iframe name="frame"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
