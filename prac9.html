@@ -1,0 +1,121 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Grid Layout (Multiple Columns) */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+      /* Animation */
+      animation: fadeIn 1s ease-in;
+      transition: transform 0.3s ease;
+    }
+
+    /* Transformation (Hover Effect) */
+    .card:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      header {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Responsive Web Design</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+    <i class="fas fa-laptop-code"></i>
+    <h3>Web Development</h3>
+    <p>Build responsive websites using modern tools.</p>
+  </div>
+
+  <div class="card">
+    <i class="fas fa-mobile-alt"></i>
+    <h3>Mobile Friendly</h3>
+    <p>Optimized for all devices and screen sizes.</p>
+  </div>
+
+  <div class="card">
+    <i class="fas fa-rocket"></i>
+    <h3>Fast Performance</h3>
+    <p>Speed and efficiency with clean code.</p>
+  </div>
+</div>
+
+<footer>
+  <p>©️ 2026 My Website</p>
+</footer>
+
+</body>
+</html>
